@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dropout Analysis</title>
+    <style>
+        .header {
+            background-color: #030E4F;
+            color: #F49F1C;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        .header img {
+            position: relative;
+            animation: slide-in 2s ease;
+            border-radius: 5px;
+        }
+        .flip-card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flip-card {
+            background-color: #fff;
+            width: 300px;
+            height: 400px;
+            perspective: 1000px;
+            margin: 20px;
+        }
+
+        .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front,
+        .flip-card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .flip-card-front {
+            background-color: #030E4F;
+            color: #F49F1C;
+        }
+
+        .flip-card-back {
+            background-color: #fff;
+            color: #000;
+            transform: rotateY(180deg);
+        }
+        .more-info {
+            text-decoration: none;
+            color: #030E4F;
+            font-weight: bold;
+        }
+        @keyframes slide-in {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .dropout-rate {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .dropout-rate img {
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s;
+        }
+
+        .dropout-rate img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Student Dropout Analysis For School Education</h1>
+        <img src="https://ifelldh.tec.mx/sites/g/files/vgjovo1101/files/4380_web_1_0.jpg" alt="Header Image" width="350" height="200">
+    </div>
+    <div class="flip-card-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Number of Schools</h2>
+                    <img src="https://cdn2.vectorstock.com/i/1000x1000/06/96/logo-school-vector-19170696.jpg" alt="School Image" width="150">
+                    <p>1489115</p>
+                    <p>Urban Area: 2.54 lakhs</p>
+                    <p>Rural Area: 12.34 lakhs</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>More Information</h3>
+                    <p>Learn more about the educational landscape and its impact.</p>
+                    <a href="https://ezyschooling.com/parenting/expert/schools-teachers-students-statistics-2022" class="more-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Number of Teachers</h2>
+                    <img src="https://as2.ftcdn.net/v2/jpg/02/58/06/95/1000_F_258069568_dXEQ4H8Is4TmagdvNGPW0W1H7m8Q902c.jpg" alt="Teacher Image" width="150">
+                    <p>9507123</p>
+                    <p>Female: 46.30 lakhs</p>
+                    <p>Male: 48.76 lakhs</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>More Information</h3>
+                    <p>Explore the role of teachers in education and society.</p>
+                    <a href="https://ezyschooling.com/parenting/expert/schools-teachers-students-statistics-2022" class="more-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h2>Number of Students</h2>
+                    <img src="https://i.pinimg.com/originals/5e/c6/98/5ec69816655cdc1cdf38c26eff0bf611.jpg" alt="Student Image" width="150">
+                    <p>265,235,830</p>
+                    <p>Girls: 12.73 crores</p>
+                    <p>Boys: 13.79 crores</p>
+                </div>
+                <div class="flip-card-back">
+                    <h3>More Information</h3>
+                    <p>Discover the student population and its significance in education.</p>
+                    <a href="https://ezyschooling.com/parenting/expert/schools-teachers-students-statistics-2022" class="more-info">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropout-rate">
+        <h2>Student Dropout Rate</h2>
+        <img src="https://www.turnthebus.org/images/Percentage_distribution_of_ever_enrolled_persons_by_major_reason_for_currently_not_attending.png" alt="Dropout Image" width="600" height="600">
+        <a href="https://www.reddit.com/r/india/comments/xspt7a/school_dropout_rate_in_india/?rdt=57956">More Information</a>
+        <p>Primary Dropout Rate: 1.45%</p>
+        <style>
+            footer {
+                background-color: #030E4F;
+                color: #F49F1C;
+                text-align: center;
+                padding: 20px 0;
+            }
+            .team-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .team-member {
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <footer>
+            <h2> Team-Tech-Titans </h2>
+            <div class="team-container">
+                <p class="team-member">Bharath</p>
+                <p class="team-member">Sathwika</p>
+                <p class="team-member">Pramod</p>
+                <p class="team-member">Pranay</p>
+                <p class="team-member">Jhanavi</p>
+                <p class="team-member">Bishwanath</p>
+                <h2>Thank You ! Visit Again</h2>
+            </div>
+        </footer>
+        </body>
+        </div>
+        </body>
+       
